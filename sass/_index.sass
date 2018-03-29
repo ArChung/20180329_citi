@@ -1,0 +1,127 @@
+
+html,body 
+	width: 100%
+	height: 100%
+
+
+.redTxt
+	color: #ce4c18		
+		
+.mainContainer
+	.titlePage
+		height: 545px
+		width: 100%
+		+coverBg
+		+bgi('bg.jpg')
+		+divGoVerticalCenter_forMom
+		
+		.textBox
+			background-color: white
+			+divGoVerticalCenter_forKid
+			max-width: 80%
+			color: #333333
+			padding: 40px 60px
+			.b_Txt
+				font-size: 50px
+				font-size: 5rem
+			.s_Txt
+				margin-top: 15px
+				font-size: 20px
+				font-size: 2rem
+				letter-spacing: 0.3em
+	.contentPage
+		height: 560px
+		width: 100%
+		+coverBg
+		+bgi('bg2.jpg')		
+		.subContainer
+			max-width: 1300px
+			margin: 0 auto
+			overflow: auto
+			.textBox
+				margin-top: 84px
+				max-width: 530px
+				padding-left: 25px
+				color: #333333
+				.b_Txt
+					font-size: 34px
+					font-size: 3.4rem
+					letter-spacing: 0.3em
+					
+				.s_Txt
+					font-size: 17px
+					font-size: 1.7rem
+					line-height: 1.8em
+					margin-top: 15px
+				.btn
+					padding: 12px 35px
+					background-color: #0e2a48
+					color: white
+					font-size: 16px
+					font-size: 1.6rem
+					letter-spacing: 0.3em
+					display: inline-block
+					+border-radius(5px) 
+					margin-top: 20px
+	.noteBox
+		background-color: #e1e1e1
+
+		&.open
+			.content
+				max-height: 400px
+				padding: 50px 25px
+		.content
+			max-width: 1300px
+			padding: 0px 25px
+			font-size: 16px 
+			font-size: 1.6rem
+			margin: 0 auto
+			box-sizing: border-box
+			overflow: hidden
+			+dTime(0.3s)
+			max-height: 0
+			ul 
+				list-style-type: decimal
+				padding-left: 25px
+				li 
+					margin-top: 5px
+		.n_footer
+			border-top: 1px solid #ccc
+			cursor: pointer
+			&:hover 
+				background-color: #ccc
+			.txtBox
+				max-width: 1300px
+				padding-left: 50px
+				margin: 0 auto			
+				font-size: 16px
+				font-size: 1.6rem
+				height: 60px
+				line-height: 60px
+				position: relative
+				&:after 
+					content: "▼"
+					position: absolute
+					left: 25px
+					top: 0
+
+
+	.backBtn
+		padding: 25px
+		text-align: center
+		cursor: pointer
+		&:hover 
+			background-color: #ccc
+		.btn
+			display: inline-block
+			.txt
+				font-size: 16px
+				font-size: 1.6rem
+				position: relative
+				margin: 0 auto
+				display: inline-block
+				&:after 
+					content: "▲"
+					position: absolute
+					left: -25px
+					top: 0

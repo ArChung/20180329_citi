@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>index</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=640,user-scalable=0">
+    <!-- hiding the Browser’s User Interface -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <!-- meta start -->
+    <meta name="title" content="" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="copyright" content="" />
+    <link rel="image_src" href="" />
+    <!-- iOS 6 -->
+    <meta name="apple-mobile-web-app-title" content="">
+    <!-- OG -->
+    <meta property="og:title" content="" />
+    <meta property="og:site_name" content="" />
+    <meta property="og:description" content="" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="" />
+    <meta property="og:url" content="" />
+    <meta property="fb:app_id" content="" />
+    <!-- css start-->
+    <link rel="stylesheet" href="css/default.css">
+    <!-- js start-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>
+</head>
+
+<body>
+    <!-- <script src="header.js"></script> -->
+    <div class="mainContainer">
+        <div class="titlePage">
+            <div class="textBox">
+                <div class="b_Txt">智富生日驚喜
+                    <br class="phoneShow"> 致獨一無二的您</div>
+                <div class="s_Txt">瑰珀翠消費滿$500，獻禮$300折扣 </div>
+            </div>
+        </div>
+        <div class="contentPage">
+            <div class="subContainer">
+                <div class="textBox">
+                    <div class="b_Txt">花旗智富管理生日獻禮</div>
+                    <div class="s_Txt">
+                        花旗智富管理壽星生日當月起至2018/12/31止，於Crabtree & Evelyn瑰珀翠官網購物，憑瑰珀翠官網優惠代碼
+                        <span class="redTxt">【CITI2018】</span>，消費滿500元（僅限商品不含運費）即享300元折扣！
+                    </div>
+                    <a href="https://www.crabtree-evelyn.com.tw" target='_blank' class="btn">前往選購</a>
+                </div>
+            </div>
+        </div>
+        <div class="noteBox">
+            <div class="content">
+                <ul>
+                    <li>本優惠券代碼可與官網其他現行優惠與折扣活動併用。</li>
+                    <li>每人限用一次，請先加入瑰珀翠官網會員後，於購物車結帳時使用 。</li>
+                    <li>此優惠代碼僅限於瑰珀翠官網https://www.crabtree-evelyn.com.tw消費使用。 </li>
+                    <li>優惠代碼使用期限至2018年12月31日止。</li>
+                </ul>
+            </div>
+            <div class="n_footer">
+                <div class="txtBox">
+                    <i class="arr"></i>
+                    <div class="f18">注意事項</div>
+                </div>
+            </div>
+        </div>
+        <div class="backBtn">
+            <div class="btn">
+                <i class="arr"></i>
+                <div class="txt">Back to top</div>
+            </div>
+        </div>
+    </div>
+    <!-- <script src="footer.js"></script> -->
+    <script>
+        window.onload = function () {
+            $('.n_footer').click(function (e) {
+                $('.noteBox').toggleClass('open')
+            })
+
+            $('.backBtn').click(function(){
+                scrollTo(0)
+            })
+        }
+
+        function scrollTo(top) {
+            var $body = (window.opera) ? (document.compatMode == "CSS1Compat" ? $('html') : $('body')) : $('html,body');
+            $body.animate({
+                scrollTop: top
+            }, 300);
+        }
+    </script>
+</body>
+
+</html>
