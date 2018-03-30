@@ -2,38 +2,52 @@
 <html lang="en">
 
 <head>
-    <title>index</title>
+    <title>智富生日驚喜 致獨一無二的您</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=640,user-scalable=0">
     <!-- hiding the Browser’s User Interface -->
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="mobile-web-app-capable" content="yes">
     <!-- meta start -->
-    <meta name="title" content="" />
-    <meta name="description" content="" />
+    <meta name="title" content="智富生日驚喜 致獨一無二的您" />
+    <meta name="description" content="花旗智富管理壽星生日當月起至2018/12/31止，於Crabtree & Evelyn瑰珀翠官網購物，憑瑰珀翠官網優惠代碼 【CITI2018】，消費滿500元（僅限商品不含運費）即享300元折扣！" />
     <meta name="keywords" content="" />
     <meta name="copyright" content="" />
     <link rel="image_src" href="" />
     <!-- iOS 6 -->
     <meta name="apple-mobile-web-app-title" content="">
     <!-- OG -->
-    <meta property="og:title" content="" />
+    <meta property="og:title" content="智富生日驚喜 致獨一無二的您" />
     <meta property="og:site_name" content="" />
-    <meta property="og:description" content="" />
+    <meta property="og:description" content="花旗智富管理壽星生日當月起至2018/12/31止，於Crabtree & Evelyn瑰珀翠官網購物，憑瑰珀翠官網優惠代碼 【CITI2018】，消費滿500元（僅限商品不含運費）即享300元折扣！" />
     <meta property="og:type" content="website" />
     <meta property="og:image" content="" />
     <meta property="og:url" content="" />
     <meta property="fb:app_id" content="" />
     <!-- css start-->
+    <link rel="stylesheet" href="https://www.citibank.com.tw/sim/citipriority/views/css/guideline.css" type="text/css" media="screen"
+    />
+    <link rel="stylesheet" href="css/popGoAway.css">
     <link rel="stylesheet" href="css/default.css">
     <!-- js start-->
+
     <script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>
-    <script type="text/javascript" src="https://www.citibank.com.tw/sim/citipriority/views/js/header.js"></script>
-    <script type="text/javascript" src=" https://www.citibank.com.tw/sim/citipriority/views/js/footer.js"></script>
+    <script type="text/javascript" src="js/common.js"></script>
+    <script type="text/javascript" src="https://www.citibank.com.tw/sim/citipriority/views/js/script.js"></script>
+    <script language="JavaScript" type="text/javascript" src="https://www.citibank.com.tw/JPC/portal/js/citi_s_code.js"></script>
+    <script language="JavaScript" type="text/javascript" src="https://www.citibank.com.tw/JPC/portal/js/sitecatalyst_page_code.js"></script>
+    <script language="JavaScript" type="text/javascript" src="https://www.citibank.com.tw/global_docs/js/xfs.js"></script>
+    <script language="JavaScript" type="text/javascript" src="https://www.citibank.com.tw/global_docs/js/xss.js"></script>
+    
+
 </head>
 
 <body>
-    
+    <!-- <script type="text/javascript" src="https://www.citibank.com.tw/sim/citipriority/views/js/header.js"></script> -->
+    <header role="header">
+        <script type="text/javascript" src="https://www.citibank.com.tw/sim/citipriority/views/js/header.js"></script>
+    </header>
+
     <div class="mainContainer">
         <div class="titlePage">
             <div class="textBox">
@@ -50,7 +64,7 @@
                         花旗智富管理壽星生日當月起至2018/12/31止，於Crabtree & Evelyn瑰珀翠官網購物，憑瑰珀翠官網優惠代碼
                         <span class="redTxt">【CITI2018】</span>，消費滿500元（僅限商品不含運費）即享300元折扣！
                     </div>
-                    <a href="https://www.crabtree-evelyn.com.tw" target='_blank' class="btn">前往選購</a>
+                    <a href="https://www.crabtree-evelyn.com.tw" target='_blank' class="btn leaveBtn">前往選購</a>
                 </div>
             </div>
         </div>
@@ -59,7 +73,8 @@
                 <ul>
                     <li>本優惠券代碼可與官網其他現行優惠與折扣活動併用。</li>
                     <li>每人限用一次，請先加入瑰珀翠官網會員後，於購物車結帳時使用 。</li>
-                    <li>此優惠代碼僅限於瑰珀翠官網<a href="https://www.crabtree-evelyn.com.tw" target='_blank' >https://www.crabtree-evelyn.com.tw</a>消費使用。 </li>
+                    <li>此優惠代碼僅限於瑰珀翠官網
+                        <a href="https://www.crabtree-evelyn.com.tw" target='_blank'>https://www.crabtree-evelyn.com.tw</a>消費使用。 </li>
                     <li>優惠代碼使用期限至2018年12月31日止。</li>
                 </ul>
             </div>
@@ -77,14 +92,16 @@
             </div>
         </div>
     </div>
-    <script src="footer.js"></script>
+    <div class="pagefooter">
+        <script type="text/javascript" src=" https://www.citibank.com.tw/sim/citipriority/views/js/footer.js"></script>
+    </div>
     <script>
         window.onload = function () {
             $('.n_footer').click(function (e) {
                 $('.noteBox').toggleClass('open')
             })
 
-            $('.backBtn').click(function(){
+            $('.backBtn').click(function () {
                 scrollTo(0)
             })
         }

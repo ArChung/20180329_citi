@@ -3216,6 +3216,7 @@ html, body {
 }
 .mainContainer .noteBox .content ul li {
   margin-top: 5px;
+  float: none;
 }
 .mainContainer .noteBox .n_footer {
   border-top: 1px solid #ccc;

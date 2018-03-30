@@ -1,0 +1,22 @@
+/*=============================================
+=                    warnning                 =
+=============================================*/
+.warnning { padding: 15px 0; color: #5d5b5b; font-size: 13px; line-height: 18px; font-weight: 700; letter-spacing: 2px; }
+.warnning span { font-size: 23px; text-shadow: 0px 0 0 #5d5b5b; }
+.warnning p { padding-left: 45px; padding-right: 45px; font-size: 14px; line-height: 25px; }
+.warnning a { color: #337abe; }
+
+.bannerBox { width: 100%; display: block; margin-top: 15px; }
+.bannerBox img { width: 100%; display: block; }
+
+/*=============================================
+=                    footer                   =
+=============================================*/
+.ft { font-size: 13px; line-height: 18px; vertical-align: top; }
+.ft .wrap1 { padding: 10px 0 50px; border-top: 1px solid #cccccc; overflow: hidden; padding-left: 43px; padding-right: 43px; }
+.ft .ft__left { float: left; vertical-align: top; }
+.ft .ft__right { float: right; vertical-align: top; text-align: right; color: #000; }
+.ft .ft__right a { margin-bottom: 3px; }
+.ft a { position: relative; color: #004784; display: inline-block; }
+.ft a:after { content: ''; position: absolute; bottom: 0; left: 0; width: 100%; height: 1px; background-color: #004784; }
+.ft .citiLogo { background: url(../img/logo_citi-ft.png?r=1517365400910) 50% 0 no-repeat; padding-top: 33px; }

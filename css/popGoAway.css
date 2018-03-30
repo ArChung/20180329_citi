@@ -1,0 +1,18 @@
+/*=============================================
+=                    popGoAway                =
+=============================================*/
+.popGoAway { position: fixed; left: 0; top: 0; width: 100%; height: 100%; text-align: center; z-index: -1000; opacity: 0; -webkit-transition: opacity 1s, z-index 0.5s; transition: opacity 1s, z-index 0.5s; }
+.popGoAway.on { z-index: 3000; opacity: 1; -webkit-transition: z-index 0.5s, opacity 1s; transition: z-index 0.5s, opacity 1s; }
+.popGoAway.on .contentBox { -ms-transform: translateY(50px); -webkit-transform: translateY(50px); transform: translateY(50px); }
+.popGoAway .bg { width: 100%; height: 100%; background: #000; opacity: .6; position: absolute; left: 0; top: 0; z-index: 0; }
+.popGoAway .contentBox { max-width: 600px; background: #fff; border-radius: 5px; display: inline-block; position: relative; z-index: 10; -webkit-transition: 0.4s; transition: 0.4s; -ms-transform: translateY(0px); -webkit-transform: translateY(0px); transform: translateY(0px); }
+.popGoAway .contentBox .articleBox { padding: 15px; border-bottom: 1px solid rgba(0, 0, 0, 0.2); text-align: left; }
+.popGoAway .contentBox .articleBox h4 { font-size: 18px; margin: 8px 0; font-weight: 500; line-height: 1.1em; }
+.popGoAway .contentBox .articleBox small { font-size: 75%; font-weight: normal; line-height: 1em; color: #777; }
+.popGoAway .contentBox .footer { text-align: right; padding: 15px; }
+.popGoAway .contentBox .footer a { display: inline-block; padding: 6px 12px; font-size: 14px; line-height: 1.5em; text-align: center; border: 1px solid transparent; border-radius: 4px; }
+.popGoAway .contentBox .footer a.noBtn { display: inline-block; color: #333; background-color: #fff; border-color: #ccc; }
+.popGoAway .contentBox .footer a.noBtn:hover { color: #333; background-color: #e6e6e6; border-color: #adadad; }
+.popGoAway .contentBox .footer a.yesBtn { display: inline-block; color: #fff; background-color: #337ab7; border-color: #2e6da4; margin-left: 8px; }
+.popGoAway .contentBox .footer a.yesBtn:hover { color: #fff; background-color: #286090; border-color: #204d74; }
+@media screen and (max-width: 620px) { .popGoAway .contentBox { width: 100%; } }
